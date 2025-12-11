@@ -45,7 +45,8 @@ enum PieceSet {
   xkcd('xkcd', PieceSet.xkcdAssets),
   letter('Letter', PieceSet.letterAssets),
   disguised('Disguised', PieceSet.disguisedAssets),
-  symmetric('Symmetric', PieceSet.symmetricAssets);
+  symmetric('Symmetric', PieceSet.symmetricAssets),
+  cubesandpi3d('3D Cubes And Pi', PieceSet.cubesandpi3dAssets);
 
   const PieceSet(this.label, this.assets);
 
@@ -2079,6 +2080,58 @@ enum PieceSet {
     ),
     PieceKind.whiteKing: AssetImage(
       '$_pieceSetsPath/rhosgfx/wK.png',
+      package: 'chessground',
+    ),
+  });
+
+  /// The [PieceAssets] for the '3D Cubes And Pi' piece set.
+  static const PieceAssets cubesandpi3dAssets = IMapConst({
+    PieceKind.blackRook: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/bR.png',
+      package: 'chessground',
+    ),
+    PieceKind.blackPawn: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/bP.png',
+      package: 'chessground',
+    ),
+    PieceKind.blackKnight: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/bN.png',
+      package: 'chessground',
+    ),
+    PieceKind.blackBishop: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/bB.png',
+      package: 'chessground',
+    ),
+    PieceKind.blackQueen: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/bQ.png',
+      package: 'chessground',
+    ),
+    PieceKind.blackKing: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/bK.png',
+      package: 'chessground',
+    ),
+    PieceKind.whiteRook: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/wR.png',
+      package: 'chessground',
+    ),
+    PieceKind.whitePawn: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/wP.png',
+      package: 'chessground',
+    ),
+    PieceKind.whiteKnight: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/wN.png',
+      package: 'chessground',
+    ),
+    PieceKind.whiteBishop: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/wB.png',
+      package: 'chessground',
+    ),
+    PieceKind.whiteQueen: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/wQ.png',
+      package: 'chessground',
+    ),
+    PieceKind.whiteKing: AssetImage(
+      '$_pieceSetsPath/cubesandpi3d/wK.png',
       package: 'chessground',
     ),
   });
